@@ -1,2 +1,5 @@
-project_name = "sales-cluster"
-region       = "us-east-1"
+project_name        = "sales-cluster"
+region              = "us-east-1"
+region_secondary    = "sa-east-1"
+acm_dns_name        = "*.semolini.com.br"
+route53_hosted_zone = "Z05404181V0D75R12Z7UD"
