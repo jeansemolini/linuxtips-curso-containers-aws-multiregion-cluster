@@ -8,4 +8,6 @@ module "cluster" {
 
   private_subnets = data.aws_ssm_parameter.private_subnets[*].value
   public_subnets  = data.aws_ssm_parameter.public_subnets[*].value
+
+  acm_certs = data.aws_acm_certificate.main[*].arn
 }
